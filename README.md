@@ -33,16 +33,16 @@
 
 - Стартовой вершиной для любого алгоритма всегда берётся первая вершина (по индексу 0):
 
-  ```
-  const int startVertex = 0;
-  ```
+```
+const int startVertex = 0;
+```
 
 - Конечной вершиной везде одинаково берётся последняя вершина (по индексу n - 1):
 
-  ```
-  int finishVertex; // = n - 1
-  finishVertex = n - 1;
-  ```
+```
+int finishVertex; // = n - 1
+finishVertex = n - 1;
+```
 
 - В главном файле [main.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/main.cpp) находится (неожиданно!) всё самое основное. Программа начинает и заканчивает свою работу именно здесь.
 
