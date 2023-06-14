@@ -68,7 +68,7 @@ finishVertex = n - 1;
 
 - Все графики можно найти в [Graphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/Graphs).
 
-- И последнее: [хобаа!](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/Отчёт.md) - здесь беззаботно и бессовестно отдыхает готовый отчётик. А что поделать, каникулы-то уже начались!
+- И последнее: [хобаа!](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/Отчёт.md) - здесь беззаботно и бессовестно отдыхает готовый отчётик.
 
 ---
 
