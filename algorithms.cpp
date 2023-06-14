@@ -10,6 +10,8 @@ int isPath(int ans) {
 
 // реализация алгоритма Дейкстры [1]
 int Dijkstra(int n, int m, vector<vector<int>>& data) {
+    int finishVertex; // = n - 1
+    int answer;
     finishVertex = n - 1;
     vector<vector<pair<int, int>>> graph(n);
     int a, b, weight;
@@ -47,6 +49,8 @@ int Dijkstra(int n, int m, vector<vector<int>>& data) {
 
 // реализация алгоритма Флойда-Уоршелла [2]
 int FloydWarshall(int n, int m, vector<vector<int>>& data) {
+    int finishVertex; // = n - 1
+    int answer;
     finishVertex = n - 1;
     vector<vector<int>> graph(n, vector<int>(n, kInf));
     int a, b, weight;
@@ -73,6 +77,8 @@ int FloydWarshall(int n, int m, vector<vector<int>>& data) {
 
 // реализация алгоритма Беллмана-Форда [3]
 int BellmanFord(int n, int m, vector<vector<int>>& data) {
+    int finishVertex; // = n - 1
+    int answer;
     finishVertex = n - 1;
     vector<Edge> e;
     int a, b, weight;
@@ -103,6 +109,8 @@ int BellmanFord(int n, int m, vector<vector<int>>& data) {
 
 // реализация алгоритма поиска A* [4]
 int AStar(int n, int m, vector<vector<int>>& data) {
+    int finishVertex; // = n - 1
+    int answer;
     finishVertex = n - 1;
     answer = kInf;
     set<int> closed;
