@@ -64,7 +64,7 @@ finishVertex = n - 1;
 
 - Всё вышеописанное было реализовано на языке программирования C++. Далее использовался Python.
 
-- В файле [drawGraphs.py](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/drawGraphs.py) имеется код программы, превращавшей ".csv" файлы из [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) в красивые графики.
+- В файлах [drawGraphs.py](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/drawGraphs.py) и [drawAlgoGraphs.py](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/drawAlgoGraphs.py) имеется код программы, превращавшей ".csv" файлы из [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) в красивые графики.
 
 - Все графики можно найти в [Graphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/Graphs).
 
