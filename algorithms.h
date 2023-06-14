@@ -16,9 +16,6 @@ using std::vector;
 const int kInf = 100000;
 const int startVertex = 0;
 
-int finishVertex; // = n - 1
-int answer;
-
 struct Edge {
     int a, b, weight;
 };
