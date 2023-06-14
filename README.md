@@ -31,6 +31,10 @@
 4.    алгоритм поиска A*    ✔
 ```
 
+- В файле [utils.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/utils.cpp) располагаются вспомогательные функции, такие, как функции генерации графов различных типов и функции, возвращающие названия алгоритмов/графов по их порядковому номеру.
+
+- Немного о генерации графов: в полных графах получалось число рёбер всегда m = n * (n - 1) // 2. Связные графы генерировались с коэффициентом плотности 0.5, отсюда число рёбер в них m = n * (n - 1) // 4. В качестве разреженных графов были выбраны деревья, называемые "бамбук", соответственно число рёбер в них оказывается m = n - 1.
+
 - Стартовой вершиной для любого алгоритма всегда берётся первая вершина (по индексу 0):
 
 ```
@@ -44,13 +48,23 @@ int finishVertex; // = n - 1
 finishVertex = n - 1;
 ```
 
-- В главном файле [main.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/main.cpp) находится (неожиданно!) всё самое основное. Программа начинает и заканчивает свою работу именно здесь.
+- В главном файле [main.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/main.cpp) находится (неожиданно!) всё самое основное. Программа начинает и заканчивает свою работу именно здесь. Суммарно по времени отработка программы занимает почти час, поэтому рекомендую запастись терпением. В ходе выполнения в консоль будет выводиться информация о стадии работы программы:
 
-- В папке [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) можно увидеть результаты работы [main.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/main.cpp). Тут в файлах формата ".csv" ждут своего звёздного часа все таблицы, необходимые для дальнейшего построения графиков.
+```
+Программа начинает работу.
+Все графы всех видов и размеров сгенерированы. Подготовительная работа выполнена.
+Обработано 25%...
+Обработано 50%...
+Обработано 75%...
+Обработано 100%!
+Программа завершает работу. Конец.
+```
+
+- В папке [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) можно увидеть результаты работы [main.cpp](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/main.cpp). Тут в файлах формата ".csv" ждут своего звёздного часа все таблицы, необходимые для дальнейшего построения графиков. Таких файлов всего 4 + (4 * 3) + 3 + 3 = 22.
 
 - Всё вышеописанное было реализовано на языке программирования C++. Далее использовался Python.
 
-- В файле [drawGraphs.py](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/drawGraphs.py) имеется код программы, превращавшей ".csv" файлы из [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) в красивые графики. Таких файлов всего (4 + 4) + (3 + 3) = 14.
+- В файле [drawGraphs.py](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/drawGraphs.py) имеется код программы, превращавшей ".csv" файлы из [TablesForGraphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/TablesForGraphs) в красивые графики.
 
 - Все графики можно найти в [Graphs](https://github.com/kamilarakhimova/hse-algo-hw3/blob/main/Graphs).
 
